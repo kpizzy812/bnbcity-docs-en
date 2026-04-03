@@ -52,3 +52,4 @@ For buildings created in Epochs 0--3, you can purchase the **Epoch Lock** boost 
 ## Epoch 0 Buildings = OG Status
 
 Buildings constructed in Epoch 0 have the highest cap and lowest tax. When selling land with an Epoch 0 building, this becomes a premium -- like owning a first-edition collectible.
+

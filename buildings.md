@@ -110,3 +110,4 @@ When you claim:
 5. If total claimed reaches cap -- building completes its cycle
 
 Claims are always full withdrawals. You cannot do partial claims.
+

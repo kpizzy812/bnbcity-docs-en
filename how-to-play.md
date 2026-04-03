@@ -94,3 +94,4 @@ Productivity recovers passively at +10% per day. Compounding boosts it by +15%. 
 - If you don't log in for 3 days, you only earn for the first 12 hours -- the rest is idle time
 - This encourages regular interaction, but there's no penalty for waiting
 - Buy Auto-Action to remove this limit entirely
+
