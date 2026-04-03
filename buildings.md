@@ -2,78 +2,111 @@
 
 ## 8 Building Tiers
 
-Each tier requires a specific land type and deposit amount. Higher tiers have larger absolute profits but lower ROI percentage.
+Each tier requires a specific land type and deposit amount. Tiers differ not only in cap but also in their **rate modifier** -- smaller tiers earn at a higher effective rate, while larger tiers earn slower but generate bigger absolute profits.
 
-| Tier | Deposit | Land Required | Total Entry | Cap Modifier | Eff. Cap (Epoch 1) |
-|------|---------|---------------|-------------|-------------|-------------------|
-| T0 | 0.001 BNB | Mini 1×1 | 0.002 BNB | ×1.25 | 3.75x |
-| T1 | 0.002 BNB | Mini 1×1 | 0.003 BNB | ×1.20 | 3.60x |
-| T2 | 0.005 BNB | Mini 1×1 | 0.006 BNB | ×1.18 | 3.54x |
-| T3 | 0.01 BNB | Standard 1×1 | 0.015 BNB | ×1.15 | 3.45x |
-| T4 | 0.05 BNB | Standard 1×1 | 0.055 BNB | ×1.05 | 3.15x |
-| T5 | 0.25 BNB | Large 2×2 | 0.275 BNB | ×1.00 | 3.00x |
-| T6 | 1 BNB | Large 2×2 | 1.025 BNB | ×0.80 | 2.40x |
-| T7 | 5 BNB | Premium 3×3 | 5.125 BNB | ×0.65 | 1.95x |
+| Tier | Deposit | Land Required | Cap Mod | Rate Mod | Effective Rate* |
+|------|---------|---------------|---------|----------|-----------------|
+| T0 | 0.001 BNB | Mini 1x1 | x1.25 | x1.20 | 6.00% |
+| T1 | 0.002 BNB | Mini 1x1 | x1.20 | x1.15 | 5.75% |
+| T2 | 0.005 BNB | Mini 1x1 | x1.18 | x1.10 | 5.50% |
+| T3 | 0.01 BNB | Standard 1x1 | x1.15 | x1.05 | 5.25% |
+| T4 | 0.05 BNB | Standard 1x1 | x1.05 | x1.00 | 5.00% |
+| T5 | 0.25 BNB | Large 2x2 | x1.00 | x0.85 | 4.25% |
+| T6 | 1 BNB | Large 2x2 | x0.80 | x0.70 | 3.50% |
+| T7 | 5 BNB | Mega 3x3 | x0.80 | x0.55 | 2.75% |
+
+*Effective rate shown assumes Epoch 0 base rate (5.0%) and healthy pool (adaptive rate = base rate).
+
+## Rate Formula
+
+The effective daily rate for each building is calculated per-tier:
+
+```
+effectiveRate = adaptiveRate x TIER_RATE_MOD[tier] / 100
+```
+
+Where `adaptiveRate` is the global rate (0.5%--10%) and `TIER_RATE_MOD` is the tier-specific multiplier. This means T0 earns 20% faster than T4, while T7 earns 45% slower.
+
+## Cap Modifier and Cap Bonus
+
+Every building has a maximum payout cap set at construction:
+
+```
+maxPayout = deposit x epochCap x tierCapMod
+```
+
+Additionally, each compound adds **+1% to your cap bonus**, up to a maximum of **+50%**. This means active compounders can significantly extend their building's lifecycle.
+
+```
+effectiveCap = maxPayout x (1 + capBonus/100)
+```
 
 ## How Tiers Differ
 
-The daily rate is **the same** for all tiers. The difference is in the **cap modifier**:
+- **Small tiers (T0--T3):** Higher rate modifier + higher cap modifier = faster earning rate and longer cycle. Best for smaller players who want maximum ROI percentage.
+- **Medium tiers (T4--T5):** Balanced rate and cap. Good middle ground.
+- **Large tiers (T6--T7):** Lower rate modifier + lower cap modifier = slower earning but massive absolute profits. Best for larger players who want big numbers.
 
-- **Small tiers (T0-T3):** Higher cap = longer cycle, higher ROI%. Best for smaller players who want maximum return percentage.
-- **Large tiers (T5-T7):** Lower cap = shorter cycle, lower ROI%, but massive absolute profit. Best for larger players who want fast cycles.
+## Total Entry Cost
 
-**Example (Epoch 1, healthy pool):**
+Don't forget land cost when calculating your total investment:
 
-| Tier | Daily Rate | Cycle | ROI | Profit |
-|------|-----------|-------|-----|--------|
-| T3 (0.01 BNB) | 5% | 81 days | +211% | ~$14 |
-| T5 (0.25 BNB) | 5% | 72 days | +171% | ~$282 |
-| T7 (5 BNB) | 5% | 63 days | +76% | ~$2,505 |
+| Tier | Deposit | Land Cost | Total Entry |
+|------|---------|-----------|-------------|
+| T0 | 0.001 BNB | 0.002 BNB | 0.003 BNB |
+| T1 | 0.002 BNB | 0.002 BNB | 0.004 BNB |
+| T2 | 0.005 BNB | 0.002 BNB | 0.007 BNB |
+| T3 | 0.01 BNB | 0.008 BNB | 0.018 BNB |
+| T4 | 0.05 BNB | 0.008 BNB | 0.058 BNB |
+| T5 | 0.25 BNB | 0.045 BNB | 0.295 BNB |
+| T6 | 1 BNB | 0.045 BNB | 1.045 BNB |
+| T7 | 5 BNB | 0.125 BNB | 5.125 BNB |
 
 ## Building Categories
 
-When building, you choose a visual category. This is purely cosmetic — it doesn't affect earnings.
+When building, you choose a visual category. This is purely cosmetic -- it doesn't affect earnings.
 
-- **Residential** — Houses, apartments, mansions
-- **Commercial** — Shops, offices, warehouses, malls
-- **Industrial** — Factories, farms
+- **Residential** -- Houses, apartments, mansions
+- **Commercial** -- Shops, offices, warehouses, malls
+- **Industrial** -- Factories, farms
 
 Each category has multiple random sprite variants. Your building gets a unique look.
 
 ## Building Lifecycle
 
 ```
-Buy land → Build (deposit) → Compound daily → Claim earnings →
-→ Cap reached (cycle complete) → Demolish → Build again or sell land
+Buy land -> Build (deposit) -> Compound daily -> Claim earnings ->
+-> Cap reached (cycle complete) -> Demolish -> Build again or sell land
 ```
 
 ## Visual States
 
 Buildings change appearance based on their state:
-- **Construction** — animated building process
-- **Active** — normal look, windows lit based on activity level
-- **Developed** — enhanced visuals after 3+ compounds
-- **Maximum** — premium look after 7+ compounds
-- **Completed** — distinct style when cap is reached
+- **Construction** -- animated building process
+- **Active** -- normal look, windows lit based on productivity level
+- **Developed** -- enhanced visuals after 3+ compounds
+- **Maximum** -- premium look after 7+ compounds
+- **Completed** -- distinct style when cap is reached
 
 ## Compound (Expand Business)
 
 When you compound:
 1. Pending earnings are added to your principal
-2. Activity meter gets +15% boost (can overcharge up to 500%)
-3. Compound count increases (affects visual level)
-4. 12h timer resets
-5. Your L1 referrer gets 10% of the compound amount
+2. Productivity gets +15% boost (can overcharge up to 500%)
+3. Cap bonus increases by +1% (max +50%)
+4. Compound count increases (affects visual level)
+5. 12h timer resets
+6. Your L1 referrer gets 10% of the compound amount
 
-**Important:** Compound grows your principal but does NOT increase your cap. The cap is fixed at deposit time.
+**Important:** Compounding grows your principal AND your cap bonus, making it doubly effective.
 
 ## Claim (Withdraw Earnings)
 
 When you claim:
 1. All pending earnings are paid out (up to remaining cap)
-2. Claim tax is deducted (7-10% depending on building epoch)
-3. Activity meter drops by -15%
+2. Claim tax is deducted (13--16% depending on epoch: 10% dev + 3--6% pool)
+3. Productivity drops by -15% (scaled with current level)
 4. 12h timer resets
-5. If total claimed reaches cap — building completes its cycle
+5. If total claimed reaches cap -- building completes its cycle
 
 Claims are always full withdrawals. You cannot do partial claims.

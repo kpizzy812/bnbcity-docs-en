@@ -7,7 +7,8 @@
 * [How to Play](how-to-play.md)
 * [Buildings & Tiers](buildings.md)
 * [Land](land.md)
-* [Marketplace](marketplace.md)
+* [Boosts & Upgrades](boosts.md)
+* [Marketplace & Sellback](marketplace.md)
 
 ## Economy
 
