@@ -8,8 +8,8 @@ Boosts are optional power-ups you can buy for your buildings. Think of them as s
 
 | Boost | Cost | What it does | Duration |
 |-------|------|-------------|----------|
-| Auto-Action 7d | 5% of tier deposit | Removes the 12h earning cap | 7 days |
-| Auto-Action 30d | 15% of tier deposit | Removes the 12h earning cap | 30 days |
+| Auto-Earn 7d | 5% of tier deposit | Removes the 12h earning cap | 7 days |
+| Auto-Earn 30d | 15% of tier deposit | Removes the 12h earning cap | 30 days |
 | Productivity Recharge | 5% of tier deposit | Resets productivity to 100% | Instant |
 | Compound Boost | 20% of tier deposit | Doubles all pending earnings | 7 days |
 | Claim Shield | 5% of tier deposit | Claims without productivity drain | 3 charges |
@@ -17,16 +17,16 @@ Boosts are optional power-ups you can buy for your buildings. Think of them as s
 | Landmark | 0.005 BNB flat | Gold border on the city map | 30 days |
 | Batch Compound | 0.001 BNB per building | Compound all buildings at once | Per use |
 
-## Auto-Action: Set it and forget it
+## Auto-Earn: Set it and forget it
 
 **Cost:** 5% of tier deposit (7 days) or 15% (30 days)
 
-Normally, your building earns for 12 hours and then pauses until you compound or claim. Auto-Action removes that limit entirely. Your building earns continuously, around the clock, for the full duration.
+Normally, your building earns for 12 hours and then pauses until you compound or claim. Auto-Earn removes that limit entirely. Your building earns continuously, around the clock, for the full duration.
 
 **Who it's for:** Anyone who can't (or doesn't want to) log in every 12 hours. Travelers, busy professionals, or just people who prefer passive income.
 
 **The ROI math (T4 example -- 0.05 BNB deposit):**
-- 7-day Auto-Action costs 0.0025 BNB ($1.50)
+- 7-day Auto-Earn costs 0.0025 BNB ($1.50)
 - Without it: you earn for ~12h/day if you log in once = half your potential
 - With it: you earn for 24h/day = double the earnings of a once-a-day player
 - Extra earnings over 7 days at 5% rate: ~0.0158 BNB ($9.45)
@@ -98,8 +98,8 @@ If you own multiple buildings, compounding each one individually is tedious. Bat
 
 | Boost | T0 (0.001) | T3 (0.01) | T4 (0.05) | T6 (1.0) | T7 (5.0) |
 |-------|-----------|-----------|-----------|----------|----------|
-| Auto-Action 7d | 0.00005 | 0.0005 | 0.0025 | 0.05 | 0.25 |
-| Auto-Action 30d | 0.00015 | 0.0015 | 0.0075 | 0.15 | 0.75 |
+| Auto-Earn 7d | 0.00005 | 0.0005 | 0.0025 | 0.05 | 0.25 |
+| Auto-Earn 30d | 0.00015 | 0.0015 | 0.0075 | 0.15 | 0.75 |
 | Prod. Recharge | 0.00005 | 0.0005 | 0.0025 | 0.05 | 0.25 |
 | Compound Boost | 0.0002 | 0.002 | 0.01 | 0.2 | 1.0 |
 | Claim Shield | 0.00005 | 0.0005 | 0.0025 | 0.05 | 0.25 |

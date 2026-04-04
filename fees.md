@@ -81,8 +81,8 @@ All boost purchases go to the dev wallet, minus 50% which goes to your L1 referr
 
 | Boost | Cost |
 |-------|------|
-| Auto-Action 7d | 5% of tier deposit |
-| Auto-Action 30d | 15% of tier deposit |
+| Auto-Earn 7d | 5% of tier deposit |
+| Auto-Earn 30d | 15% of tier deposit |
 | Productivity Recharge | 5% of tier deposit |
 | Compound Boost | 20% of tier deposit |
 | Claim Shield | 5% of tier deposit |

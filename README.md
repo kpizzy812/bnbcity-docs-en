@@ -47,6 +47,7 @@ Imagine a shared pixel city on the blockchain where every building is a real inc
 
 ## Join the city
 
+- [Play BNB City](https://bnbcity.saturn.ac) -- start building now
 - [Telegram Channel](https://t.me/cityofbnb) -- announcements and updates
 - [Telegram Chat](https://t.me/bnbcitychat) -- community discussion
-- [Twitter / X](https://x.me/0xbnbcity) -- follow for alpha
+- [Twitter / X](https://x.com/0xbnbcity) -- follow for alpha

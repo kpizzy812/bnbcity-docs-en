@@ -37,7 +37,7 @@ BNB Smart Chain (BSC). Fast, cheap, widely supported. If your wallet is set to E
 
 **Twice a day is optimal** -- once every 12 hours. Your building earns for 12 hours, then pauses. Logging in to compound restarts the timer.
 
-If you can't do twice a day, once a day still works -- you just earn for 12 out of 24 hours. And if even that's too much, the **Auto-Action boost** removes the 12h limit entirely for 7 or 30 days.
+If you can't do twice a day, once a day still works -- you just earn for 12 out of 24 hours. And if even that's too much, the **Auto-Earn boost** removes the 12h limit entirely for 7 or 30 days.
 
 There's never a penalty for being away. You just miss potential earning time.
 
@@ -122,7 +122,7 @@ This is the game's biggest reward for active players. Someone who logs in and co
 
 Depends on the boost, but generally yes -- each one has a clear ROI:
 
-- **Auto-Action** -- pays for itself in ~1 day of extra earnings if you'd otherwise miss the 12h window
+- **Auto-Earn** -- pays for itself in ~1 day of extra earnings if you'd otherwise miss the 12h window
 - **Compound Boost** -- doubles earnings for 7 days; the accelerated principal growth often returns 2--3x the cost
 - **Claim Shield** -- cheap protection for your productivity during claim phases
 - **Epoch Lock** -- permanent rate freeze; one of the highest-value plays in early epochs

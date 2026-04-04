@@ -100,7 +100,7 @@ This design choice has important consequences:
 - **No botting advantage** -- a bot and a human both get one action per 12 hours
 - **No urgency to check every hour** -- just log in twice a day
 - **Idle time is wasted time** -- but there's no penalty, just missed opportunity
-- **Auto-Action boost** removes the limit entirely for players who want passive income
+- **Auto-Earn boost** removes the limit entirely for players who want passive income
 
 ## Where the money comes from (and goes)
 

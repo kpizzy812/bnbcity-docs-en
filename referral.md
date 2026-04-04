@@ -28,7 +28,7 @@ Every time your direct referral compounds, you earn **10% of the compound amount
 
 ### On boost purchases (Level 1 only)
 
-When your direct referral buys any boost, you earn **50% of the purchase price**. This applies to every boost in the game: Auto-Action, Compound Boost, Claim Shield, Epoch Lock, Productivity Recharge, Landmark, and Batch Compound.
+When your direct referral buys any boost, you earn **50% of the purchase price**. This applies to every boost in the game: Auto-Earn, Compound Boost, Claim Shield, Epoch Lock, Productivity Recharge, Landmark, and Batch Compound.
 
 **Example:** Your referral buys a Compound Boost for their T4 building (0.01 BNB / $6). You instantly receive 0.005 BNB ($3) in your referral balance. That's a 50% cut -- from a single purchase.
 
