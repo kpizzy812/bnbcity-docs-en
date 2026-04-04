@@ -12,7 +12,7 @@ Imagine a shared pixel city on the blockchain where every building is a real inc
 
 **Early players win big.** BNB City uses a deflationary epoch system (think Bitcoin halving). Right now, in the earliest epochs, the base daily rate is 5% and the payout cap is 3.0x. Both shrink as the city grows. The earlier you build, the better your deal -- permanently.
 
-**Everything is on-chain and unchangeable.** One smart contract, no admin keys, no proxy upgrades, no "we updated the terms." The rules are set in code and nobody -- not even the team -- can change them after deployment.
+**Your money stays yours.** All player BNB is held inside the smart contract -- not in anyone's wallet, not on an exchange. Nobody has access to player funds. You can only withdraw what you've earned, and only you can do it. One immutable contract, no admin keys, no "we updated the terms."
 
 **It's a real community.** Everyone builds in the same city. You can see every player's buildings on the shared isometric map. Your business has a physical location, neighbors, and a reputation.
 

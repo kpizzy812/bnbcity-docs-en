@@ -1,24 +1,34 @@
 # Security & Trust
 
-In DeFi, trust comes from code -- not promises. BNB City is built on a single, immutable smart contract where every rule, every fee, and every mechanic is hardcoded and verifiable. Here's why you can trust the system.
+In DeFi, trust comes from code -- not promises. BNB City is built so you don't need to trust anyone -- just verify the contract.
+
+## Your money stays yours
+
+This is the most important thing to understand: **all player BNB is held inside the smart contract on the blockchain, not in anyone's personal wallet.**
+
+When you build, your BNB goes into the contract and stays there. Not into the developer's account, not into an exchange, not into some "pool" under someone's control. It sits inside a program that operates strictly by its hardcoded rules.
+
+**Nobody -- not the developer, not the team, not a hacker -- can simply withdraw funds from the contract.** BNB can only leave the contract in three ways:
+- A player claims their earned yield (minus claim tax)
+- A player uses the sellback function
+- Developer fees are automatically calculated and distributed by the code
+
+That's it. No other withdrawal paths exist in the code. This is not a promise -- it's math.
 
 ## One contract, no backdoors
 
-BNB City runs on a **single Solidity smart contract** deployed on BNB Smart Chain. About 1,170 lines of code that handle everything: deposits, earnings, compounds, claims, referrals, marketplace, boosts -- all of it.
+BNB City runs on a **single Solidity smart contract** on BNB Smart Chain (~1,170 lines):
 
-**What makes it trustworthy:**
-
-- **No proxy pattern** -- the contract cannot be upgraded or swapped out. The code running today is the code running forever.
-- **No pause function** -- nobody can freeze the contract or stop it from running. Not the team, not anyone.
-- **No admin keys** (except one) -- the only admin function is `setDevWallet()`, which changes where dev fees go. That's it. The admin cannot touch your deposits, change rates, modify caps, adjust fees, or alter any game mechanic.
-- **No external dependencies** -- the contract doesn't call other contracts (except OpenZeppelin's ReentrancyGuard for security). No oracle risk, no bridge risk, no "we rely on this other protocol" risk.
+- **No proxy pattern** -- the contract cannot be upgraded or swapped out. The code running today runs forever.
+- **No pause function** -- nobody can freeze or stop it. Not the team, not anyone.
+- **No external dependencies** -- no oracles, no bridges, no "we rely on this other protocol" risk.
 
 ## What the admin can and cannot do
 
 **The admin can:**
 - Change the dev wallet address (where dev fees are sent)
 
-**The admin cannot:**
+That's the only admin function. It doesn't give access to player funds. **The admin cannot:**
 - Change deposit fees, claim taxes, or any economic parameter
 - Pause, stop, or kill the contract
 - Withdraw player deposits or earnings
