@@ -104,3 +104,7 @@ Here's the bottom line -- what a player actually receives after all fees, assumi
 *These are best-case scenarios with maximum cap bonus (+50% from 50 compounds). Actual returns depend on the adaptive rate and your compounding consistency.*
 
 **The transparency promise:** Every number on this page is hardcoded in a verified, immutable smart contract. Nobody can change the fees after deployment. What you see is what you get -- permanently.
+
+---
+
+**See also:** [Economy](economy.md) | [Referral System](referral.md)

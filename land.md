@@ -58,3 +58,7 @@ When a building reaches its payout cap, the cycle is complete. You can:
 3. **Hold the empty plot** -- no cost, no rush
 
 Your land never expires. It's yours until you sell it.
+
+---
+
+**See also:** [Marketplace & Sellback](marketplace.md) | [Buildings & Tiers](buildings.md)

@@ -35,6 +35,18 @@ The formula is elegant: the rate tracks the ratio of the contract's BNB balance 
 
 In the game, you see this as **"City Prosperity"** -- a visual meter showing the current economic health.
 
+### Rate formula with a concrete example
+
+```
+Era 0, base rate = 5%
+Pool balance = 80 BNB, Active deposits = 50 BNB
+Adaptive rate = 5% x (80/50) = 8.0% (capped at 10%, so 8.0%)
+For T3 (rate_mod x1.05): effective rate = 8.0% x 1.05 = 8.4%/day
+For T7 (rate_mod x0.55): effective rate = 8.0% x 0.55 = 4.4%/day
+```
+
+When the pool is healthy (more BNB than active deposits), the rate goes above the base. When the pool is under pressure, it drops below. The floor (0.5%) and ceiling (10%) keep things in a safe range no matter what.
+
 ## Per-tier rate modifiers: fair by design
 
 Not all buildings earn at the same rate. Each tier has its own modifier:
@@ -134,3 +146,26 @@ BNB City's economy works because it combines three things that most DeFi project
 3. **Deflationary pressure** -- epochs progressively reduce extraction rates, keeping the pool healthy as the city grows
 
 The result is a system where early players earn more (because early epochs have better rates), active players earn more (because compounding increases principal, productivity, and cap), and the pool stays healthy through mathematical self-correction.
+
+## Approximate earnings example
+
+Here's a worked example to give you a feel for the numbers. **These are approximate and depend on pool health.**
+
+**Scenario: T3 building (0.01 BNB, ~$6), Era 0, rate_mod x1.05**
+
+| Step | What happens | Amount |
+|------|-------------|--------|
+| Day 0 | Deposit 0.01 BNB, after 10% fee | Principal: 0.009 BNB |
+| Daily earnings | ~5.25% of 0.009 BNB | ~0.000473 BNB (~$0.28/day) |
+| Week 1 | Daily compounding grows principal | Principal: ~0.0124 BNB |
+| Week 4 | Compounding snowball effect | Principal: ~0.0278 BNB |
+| ~Day 80 | Cap reached (3.0x x 1.15 = 3.45x) | Total payout: ~0.031 BNB (~$18.60) |
+| Net profit | After 10% deposit fee + 13% claim tax | **~$12-13 net profit** |
+
+That's roughly a **2x net return** on a $6 investment over ~80 days, with active daily compounding. With the +50% cap bonus from 50 compounds, the cap extends to ~0.047 BNB (~$28), pushing net profit even higher.
+
+**Important:** These numbers assume a healthy pool and stable adaptive rate. If the pool is under pressure, the rate drops and timelines stretch. If the pool is flush, the rate rises and you hit cap faster. Always check City Prosperity in-game for the current state.
+
+---
+
+**See also:** [Epochs](epochs.md) | [Fees & Taxes](fees.md) | [Buildings & Tiers](buildings.md)

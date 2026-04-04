@@ -88,9 +88,15 @@ Every time you compound, your building's payout cap grows by +1%, up to a maximu
 
 The cap bonus is the game's way of saying: "We reward players who show up." Passive investors get the base return. Active compounders get significantly more.
 
-## Building visuals
+## Building categories: Residential, Commercial, Industrial
 
-When you build, you pick a visual category -- Residential (houses, apartments), Commercial (shops, offices), or Industrial (factories). This is purely cosmetic and doesn't affect earnings, but it makes the city look alive.
+When you build, you choose one of three categories: **Residential** (houses, apartments), **Commercial** (shops, offices), or **Industrial** (factories, warehouses).
+
+**This is a visual choice only -- it does NOT affect your earnings, rate, cap, or any economic parameter.** Your category determines which pool of building sprites your building is randomly drawn from. A T4 Residential building earns exactly the same as a T4 Industrial building at the same rate and epoch.
+
+Pick whichever look you like best for your spot on the map. Some players coordinate with neighbors for themed districts. Others go for variety. It's entirely cosmetic, entirely your call.
+
+## Building visuals
 
 Your building evolves visually as you compound:
 - **Fresh build** -- construction animation
@@ -107,3 +113,7 @@ Buy land -> Build (deposit) -> Compound daily -> Claim profits ->
 ```
 
 Each cycle is an opportunity to reinvest at a higher tier, diversify across multiple plots, or take profits off the table. You're in control of your strategy at every step.
+
+---
+
+**See also:** [Boosts & Upgrades](boosts.md) | [Epochs](epochs.md) | [Fees & Taxes](fees.md)

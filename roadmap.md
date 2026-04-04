@@ -4,28 +4,28 @@ BNB City is launching lean and growing with the community. Here's where we're he
 
 ## Phase 1: Launch -- The Foundation
 
-The core game goes live. This is where early movers get the best deals.
+The core game goes live with a full-featured economy. This is where early movers get the best deals.
 
 - Smart contract deployed on BSC Mainnet (immutable, verified)
 - Shared isometric city map with roads and land sales
 - Full gameplay loop: buy land, build, compound, claim
 - 8 building tiers, 4 land types, all boosts active
 - 3-level referral system
+- **P2P land marketplace** -- buy and sell plots from other players
+- **Building marketplace** -- trade active businesses with running income
 - English + Russian localization
 
-**Why it matters:** Phase 1 is Epoch 0 -- the highest rates, the best caps, the most central plots. Everything built now has a permanent structural advantage.
+**Why it matters:** Phase 1 includes a live marketplace from day one. You can already buy, sell, and trade land and buildings with other players. Combined with Epoch 0 rates, the best caps, and the most central plots -- everything built now has a permanent structural advantage.
 
-## Phase 2: Growth -- The Economy Expands
+## Phase 2: Growth -- Competitive Layer
 
-The P2P economy opens up and the competitive layer arrives.
+The competitive and engagement features arrive.
 
-- P2P land marketplace -- buy and sell plots from other players
-- Building marketplace -- trade active businesses with running income
 - Leaderboards -- biggest empires, most profitable players, top referrers
 - Quest system with BNB rewards -- earn extra by completing in-game challenges
 - Mobile optimizations -- full gameplay on phone
 
-**Why it matters:** The marketplace transforms land from a game mechanic into a speculative asset. Central plots bought in Phase 1 become tradable at market-determined prices. Leaderboards add a competitive dimension that drives engagement.
+**Why it matters:** Leaderboards add a competitive dimension that drives engagement. Quests give active players extra reasons to stay in the game. Mobile optimization opens the door to a wider audience.
 
 ## Phase 3: Community -- Network Effects
 

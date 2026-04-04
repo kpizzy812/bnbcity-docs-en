@@ -114,3 +114,7 @@ This is the optimal play. You're essentially getting a building with a higher ca
 | Deposits | 2% / 1% / 0.5% | L1, L2, L3 |
 | Compounds | 10% of compound amount | L1 only |
 | Boost purchases | 50% of payment | L1 only |
+
+---
+
+**See also:** [Fees & Taxes](fees.md) | [How to Play](how-to-play.md)

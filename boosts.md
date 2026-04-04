@@ -112,3 +112,7 @@ If you own multiple buildings, compounding each one individually is tedious. Bat
 Your L1 referrer earns **50% of every boost purchase** you make, credited instantly to their referral balance.
 
 **Example:** You buy a Compound Boost for a T4 building (0.01 BNB). Your referrer gets 0.005 BNB ($3) credited immediately. If they've built a solid referral network with active players buying boosts, this income stream alone can be significant.
+
+---
+
+**See also:** [Buildings & Tiers](buildings.md) | [Fees & Taxes](fees.md)

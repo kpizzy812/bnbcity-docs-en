@@ -22,6 +22,21 @@ The difference: Bitcoin halvings happen on a timer. BNB City epochs happen based
 
 **What this means in plain English:** The first 5 BNB deposited into the city (across all players) gets the best deal -- 5% daily rate, 3.0x cap, 13% claim tax. After 200 BNB total deposits, the rate is 2% and the cap is 2.4x. Still profitable, but noticeably less generous.
 
+## Exact epoch thresholds
+
+Here's how much total BNB must be deposited (cumulative, across all players) to trigger each epoch change:
+
+| Transition | Cumulative deposits needed | What changes |
+|------------|---------------------------|-------------|
+| **E0 -> E1** | **5 BNB** | Rate drops from 5.0% to 4.5%, cap from 3.0x to 2.9x |
+| **E1 -> E2** | **10 BNB** | Rate drops to 4.0%, cap to 2.8x, pool tax rises to 4% |
+| **E2 -> E3** | **25 BNB** | Rate drops to 3.5%, cap to 2.7x |
+| **E3 -> E4** | **50 BNB** | Rate drops to 3.0%, cap to 2.6x, pool tax rises to 5% |
+| **E4 -> E5** | **100 BNB** | Rate drops to 2.5%, cap to 2.5x |
+| **E5 -> E6** | **200 BNB** | Rate drops to 2.0%, cap to 2.4x, pool tax rises to 6% |
+
+Watch the in-game counter -- when it shows "2.3 BNB until Epoch 1," that's your window closing. **Every BNB deposited by any player pushes everyone closer to the next epoch.** If you're planning to build, don't wait for someone else to push the threshold.
+
 ## Why this matters to you right now
 
 ### Early builders get permanently better deals
@@ -98,3 +113,7 @@ See [Boosts & Upgrades](boosts.md) for details.
 Buildings constructed in Epoch 0 are the game's originals. They have the highest caps, the lowest taxes, and they were there from the beginning. When these buildings (or the land they sit on) appear on the marketplace, they carry a premium -- like owning a first-edition anything.
 
 **The takeaway:** Every day you wait is a day closer to the next epoch. The game rewards early movers. The math doesn't lie.
+
+---
+
+**See also:** [Economy](economy.md) | [Buildings & Tiers](buildings.md)

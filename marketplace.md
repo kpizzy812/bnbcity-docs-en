@@ -38,6 +38,10 @@ BNB City has a built-in P2P economy. You can trade land plots, sell active busin
 | Primary sale (from mayor) | 100% to protocol | N/A (initial sale) |
 | P2P resale | 10% to protocol | 90% of sale price |
 
+### Listing expiry
+
+Marketplace listings expire after **30 days** if not sold. After expiry, the listing is removed and your plot returns to normal status. If you still want to sell, simply relist it -- adjust the price if needed. This keeps the marketplace clean and prevents stale offers from cluttering the listings.
+
 ## Sellback: Your exit button
 
 Sometimes you want to close a position before a building finishes its cap. Maybe the rate dropped, maybe you want to restructure your portfolio, maybe you just need the BNB. Sellback lets you sell a building back to the pool.
@@ -75,3 +79,7 @@ The dev wallet receives 10% of the commission amount.
 If your building still has significant cap remaining and the rate is healthy, it's almost always better to let it complete naturally. Sellback is a tool for flexibility, not the default strategy.
 
 **Best case for sellback:** You built early, compounded a few times, haven't claimed much, and want to reorganize your capital. The 15% commission on a barely-claimed building is a reasonable cost for instant liquidity.
+
+---
+
+**See also:** [Land](land.md) | [Buildings & Tiers](buildings.md)

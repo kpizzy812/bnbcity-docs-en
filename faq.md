@@ -175,3 +175,11 @@ The source code is verified on BscScan. Link available in the game footer. Anyon
 ### What if the team disappears?
 
 The contract keeps running. It has no pause function, no kill switch. Even if the website goes offline, the contract remains on BSC and can be interacted with directly through any blockchain explorer. Your buildings keep earning.
+
+### How much does gas cost?
+
+Gas on BSC is extremely low -- around $0.001 per transaction (0.01-0.15 Gwei). Building, compounding, claiming -- each action costs less than a tenth of a cent in gas. You can play for months without spending even $0.10 on transaction fees.
+
+---
+
+*BNB City is a DeFi game, not an investment product. Never invest more than you can afford to lose. This documentation is not financial advice. Past performance does not guarantee future results.*

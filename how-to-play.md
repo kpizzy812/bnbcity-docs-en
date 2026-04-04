@@ -122,3 +122,7 @@ Productivity recovers naturally at +10% per day. Compounding gives it a +15% boo
 - Want fully passive income? The Auto-Earn boost removes the 12h limit entirely
 
 This design means everyone plays on a level field. No bots, no advantage from checking every minute. Just show up twice a day (or buy Auto-Earn and relax).
+
+---
+
+**See also:** [Buildings & Tiers](buildings.md) | [Boosts & Upgrades](boosts.md) | [Referral System](referral.md)
