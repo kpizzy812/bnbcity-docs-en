@@ -1,65 +1,77 @@
 # Marketplace & Sellback
 
-## P2P Land Market
+BNB City has a built-in P2P economy. You can trade land plots, sell active businesses to other players, or exit positions early through the sellback mechanism. Every transaction happens on-chain -- no trust required.
 
-Players can list their land plots for sale. Other players can buy them directly.
+## P2P Land & Building Market
 
-### How It Works
+### How trading works
 
-1. **List:** Set your price and list the plot
-2. **Buy:** Another player pays the listed price
-3. **Fee:** 10% commission goes to the mayor, 90% to the seller
+1. **List your plot** -- set your asking price and it goes live on the marketplace
+2. **Buyer pays** -- another player purchases at your listed price
+3. **Instant transfer** -- the plot (and any building on it) changes ownership immediately
+4. **10% marketplace fee** goes to the protocol; you keep 90%
 
-### What Gets Sold
+### What you can sell
 
-- **Empty plot** -- just the land rights
-- **Plot with active building** -- land + building transfer to the buyer (building keeps earning)
-- **Plot with completed building** -- land + completed building (buyer can demolish and rebuild)
+- **Empty plots** -- pure land speculation. Central plots can sell at significant premiums over the original price
+- **Plots with active buildings** -- the buyer inherits a running business that's already earning. The building keeps its productivity, cap progress, and compound count
+- **Plots with completed buildings** -- the buyer gets the land plus a building they can demolish and replace
 
-### Why Trade Land?
+### Why the marketplace matters
 
-- **Speculation** -- buy cheap land early, sell when the city grows
-- **Location** -- central plots are worth more (OG status)
-- **Late entry** -- new players can buy prime locations from existing players instead of waiting for mayor sales
-- **Liquidity** -- if you need BNB, sell your plot instead of waiting for building earnings
+**For sellers:**
+- Cash out without waiting for your building to finish its cap
+- Sell prime locations at a profit when the city has grown around them
+- Liquidate when you need BNB for something else
 
-### Marketplace Fees
+**For buyers:**
+- Skip the line -- buy central plots that haven't been available from the mayor for weeks
+- Acquire running businesses with established productivity and cap bonus
+- Enter the game at a prime location instead of building on the outskirts
 
-| Operation | Fee | Goes To |
-|-----------|-----|---------|
-| Primary sale (from mayor) | 100% | Mayor (admin) |
-| P2P resale | 10% | Mayor (admin) |
-| P2P resale | 90% | Seller |
+**Speculation opportunity:** A Mini plot bought from the mayor for 0.002 BNB ($1.20) in the first ring could easily sell for many times that once the city center is packed with active players. Location is permanent, and demand for central spots only grows.
 
-## Sellback
+### Marketplace fee
 
-You can sell a building back to the pool instead of waiting for its cap to complete. This is useful when you want to exit early or restructure your portfolio.
+| Transaction type | Fee | Seller receives |
+|-----------------|-----|-----------------|
+| Primary sale (from mayor) | 100% to protocol | N/A (initial sale) |
+| P2P resale | 10% to protocol | 90% of sale price |
 
-### How Sellback Works
+## Sellback: Your exit button
 
-1. Your building must have a **7-day cooldown** since its last action (compound, claim, or boost activation)
-2. A commission is deducted based on how much you've already claimed
-3. The remaining value is returned to your wallet
+Sometimes you want to close a position before a building finishes its cap. Maybe the rate dropped, maybe you want to restructure your portfolio, maybe you just need the BNB. Sellback lets you sell a building back to the pool.
 
-### Sellback Commission
+### How it works
 
-The commission scales with your claim ratio -- the more you've already extracted, the higher the fee:
+1. Wait for the **7-day cooldown** after your last action (compound, claim, or boost activation)
+2. Trigger sellback -- the building is dissolved
+3. You receive your remaining deposit minus a commission
+4. The plot becomes empty (you keep the land)
 
-| Claim Ratio | Commission |
-|-------------|------------|
-| 0% claimed | 15% commission |
-| 50% claimed | ~57% commission |
-| 100% claimed | 100% commission |
+### The commission structure
 
-The commission scales linearly from 15% to 100% based on how much of your cap you've already claimed. The dev wallet receives 10% of the commission amount.
+The commission depends on how much you've already claimed from the building:
 
-### When to Use Sellback
+| How much you've claimed | Commission taken |
+|------------------------|-----------------|
+| Nothing claimed (0%) | 15% commission -- you keep 85% |
+| Claimed half your cap (50%) | ~57% commission |
+| Claimed everything (100%) | 100% commission -- nothing left |
 
-- You want to exit a position early
-- You want to reallocate capital to a different tier
-- The adaptive rate has dropped and you want to rebuild at current conditions
-- You need liquidity but selling land on the marketplace is too slow
+The logic is straightforward: if you've already extracted most of your building's value, there's less to refund. If you're exiting early before claiming much, you get most of your deposit back.
 
-### Sellback vs. Waiting
+The dev wallet receives 10% of the commission amount.
 
-Sellback is a trade-off: you get immediate liquidity but pay a commission. If your building still has significant cap remaining and the rate is healthy, it's usually better to let it complete naturally.
+### When sellback makes sense
+
+- **Portfolio rebalancing** -- dissolve a low-tier building and reinvest in a higher tier
+- **Rate adaptation** -- if the adaptive rate has dropped significantly, rebuild at current conditions
+- **Quick liquidity** -- faster than listing on the marketplace and waiting for a buyer
+- **Strategy pivot** -- you've learned the system and want to restructure your approach
+
+### Sellback vs. letting it ride
+
+If your building still has significant cap remaining and the rate is healthy, it's almost always better to let it complete naturally. Sellback is a tool for flexibility, not the default strategy.
+
+**Best case for sellback:** You built early, compounded a few times, haven't claimed much, and want to reorganize your capital. The 15% commission on a barely-claimed building is a reasonable cost for instant liquidity.

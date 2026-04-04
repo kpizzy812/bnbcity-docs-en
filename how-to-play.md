@@ -1,97 +1,124 @@
 # How to Play
 
-## Step 1: Get a Wallet
+Getting started with BNB City takes about 5 minutes. Here's everything you need, step by step.
 
-You need a BSC-compatible wallet with some BNB for gas fees and deposits. Here are the recommended options:
+## Step 1: Get a wallet
 
-- **[Rabby](https://rabby.io)** -- great for desktop, clean interface
-- **[MetaMask](https://metamask.io)** -- the most popular Web3 wallet
-- **[Trust Wallet](https://trustwallet.com)** -- best for mobile
+If you already have a crypto wallet, skip ahead. If not, here are the best options:
 
-Make sure your wallet is connected to BNB Smart Chain (BSC). Gas fees on BSC are very low -- around $0.01 per transaction.
+- **[Rabby](https://rabby.io)** -- our top pick for desktop. Clean, fast, shows you exactly what you're signing.
+- **[MetaMask](https://metamask.io)** -- the most widely used Web3 wallet. Works everywhere.
+- **[Trust Wallet](https://trustwallet.com)** -- the go-to for mobile. Simple and reliable.
+
+Make sure your wallet is set to **BNB Smart Chain (BSC)**. Gas fees here are tiny -- about $0.01 per transaction. You'll never stress about gas costs.
 
 ## Step 2: Connect to BNB City
 
-Open BNB City in your browser and connect your wallet. The game runs entirely on-chain -- your wallet is your account.
+Open BNB City in your browser and hit "Connect Wallet." That's it -- your wallet is your account. No registration, no email, no passwords.
 
-If someone invited you, use their referral link to connect. This sets up your referral relationship permanently and gives your inviter a small reward on your deposits.
+**Got a referral link?** Use it when you first connect. It permanently links you to your inviter (and gives them a small bonus on your deposits -- doesn't cost you anything extra).
 
-## Step 3: Buy Land
+## Step 3: Buy your first land plot
 
-Before building, you need to own a land plot. The city mayor sells plots as the city grows outward from the center.
+Before you can build, you need land. Think of it like buying a lot before constructing a building in the real world.
 
-| Plot Type | Size | Price | For Tiers |
-|-----------|------|-------|-----------|
-| Mini | 1x1 | 0.002 BNB | T0, T1, T2 |
-| Standard | 1x1 | 0.008 BNB | T3, T4 |
-| Large | 2x2 | 0.045 BNB | T5, T6 |
-| Mega | 3x3 | 0.125 BNB | T7 |
+| Plot type | Price | What you can build on it |
+|-----------|-------|--------------------------|
+| Mini 1x1 | 0.002 BNB (~$1.20) | Starter businesses (T0, T1, T2) |
+| Standard 1x1 | 0.008 BNB (~$4.80) | Mid-range businesses (T3, T4) |
+| Large 2x2 | 0.045 BNB (~$27) | Premium businesses (T5, T6) |
+| Mega 3x3 | 0.125 BNB (~$75) | The flagship T7 business |
 
-Plots can only be purchased next to roads. Early players get central plots -- the most prestigious locations.
+The city grows outward from the center, ring by ring. **Early players get the most central plots** -- prime real estate that's visible to everyone and carries OG bragging rights.
 
-**Tip:** You can upgrade a Mini plot to Standard for 0.006 BNB, so you can start small and scale up later.
+**Pro tip:** Start with a Mini plot. Later, you can upgrade it to Standard for just 0.006 BNB ($3.60) -- keeping your prime location while unlocking higher-tier buildings.
 
-## Step 4: Build a Business
+## Step 4: Build a business
 
-Choose a building tier and pay the deposit. A 10% deposit fee is deducted -- the remaining 90% becomes your building's working principal.
+Pick a building tier based on how much you want to invest. A 10% deposit fee is taken (this funds the ecosystem), and the remaining 90% becomes your building's working capital -- the amount that earns yield every day.
 
-**Example:** You build a T3 business for 0.01 BNB on your Standard 1x1 plot.
-- Land cost: 0.008 BNB
-- Deposit: 0.01 BNB (10% fee = 0.001 BNB to dev, 0.009 BNB becomes principal)
-- Total entry cost: 0.018 BNB
+**Real example -- starting small:**
+- You buy a Mini plot: 0.002 BNB ($1.20)
+- You build a T2 business: 0.005 BNB ($3.00)
+- Total invested: 0.007 BNB ($4.20)
+- Your building's working capital: 0.0045 BNB (after 10% fee)
+- At 5.5% daily rate, you earn about $0.15/day on this tiny building
 
-Your building starts generating yield immediately.
+That might not sound like much, but it's a 5.5% daily return. Try getting that from a savings account.
 
-## Step 5: Compound or Claim
+**Bigger example -- going in with conviction:**
+- You buy a Standard plot: 0.008 BNB ($4.80)
+- You build a T4 business: 0.05 BNB ($30)
+- Total invested: 0.058 BNB ($34.80)
+- Working capital: 0.045 BNB
+- At 5% daily rate, you earn about $1.35/day
+- With daily compounding, this accelerates fast
 
-Every 12 hours, your building accumulates earnings. You have two options:
+Your building starts generating yield **immediately** after construction.
 
-### Compound (Recommended)
-Reinvest earnings back into your building. This:
-- Increases your principal (bigger daily income)
-- Boosts your productivity by +15% (can overcharge up to 500%)
-- Adds +1% to your cap bonus (max +50%)
-- Gives your L1 referrer a 10% bonus
-- Resets the 12h cycle
+## Step 5: The daily ritual -- compound or claim
 
-### Claim
-Withdraw earnings to your wallet. This:
-- Sends BNB to your wallet (minus 13--16% claim tax)
-- Drains your productivity by -15% (scaled with current level)
-- Resets the 12h cycle
+Every 12 hours, your building accumulates earnings. When you log in, you choose one of two actions:
 
-**Optimal strategy:** Compound for 7--10 days, then claim. Repeat.
+### Compound (the power move)
 
-## Step 6: Use Boosts
+Reinvesting your earnings back into the building. This is how experienced players maximize returns:
 
-Optional upgrades can make your buildings more efficient:
-- **Auto-Action** -- removes the 12h earning cap (7 or 30 days)
-- **Compound Boost** -- doubles your pending earnings for 7 days
-- **Claim Shield** -- 3 claims without productivity drain
-- **Productivity Recharge** -- reset to 100% when you're running low
+- **Grows your principal** -- tomorrow you earn on a bigger base
+- **Boosts productivity by +15%** -- your building becomes more efficient (can supercharge up to 500%)
+- **Adds +1% to your cap bonus** -- extends how much your building can pay out total (up to +50%)
+- **Rewards your referrer** -- they get 10% of the compound (costs you nothing)
 
-See [Boosts & Upgrades](boosts.md) for full details.
+Compounding creates a snowball effect. Each day your building earns more than the day before.
 
-## Step 7: Complete the Cycle
+### Claim (payday)
 
-Each building has a maximum payout cap. Once reached, the building completes its cycle. You can demolish it (free) and build a new one on the same plot, or sell the plot to another player.
+Withdraw your earnings to your wallet. Real BNB, in your pocket.
 
-## Productivity
+- A 13--16% claim tax is deducted (10% to dev + 3--6% back to the pool)
+- Productivity drops by 15% (recovers passively over time)
 
-Your building's productivity level affects its earning rate:
-- **100% = maximum earnings** (can overcharge to 500% via compounding)
+**The smart strategy:** Compound for 7--10 days to build up a strong principal and high productivity. Then claim. Then repeat the cycle. This balances growth with taking profits.
+
+## Step 6: Supercharge with boosts
+
+Once you're comfortable, optional boosts can accelerate your earnings:
+
+- **Auto-Action** -- can't log in every 12 hours? This removes the earning cap so your building runs 24/7 (7 or 30 days)
+- **Compound Boost** -- doubles your pending earnings for a week. Incredible during the compounding phase
+- **Claim Shield** -- 3 claims without any productivity drain. Take profits guilt-free
+- **Productivity Recharge** -- instantly reset to 100% when productivity gets low
+
+These are investments, not expenses. Each one has a clear ROI. See [Boosts & Upgrades](boosts.md) for the full breakdown.
+
+## Step 7: Complete the cycle and rebuild
+
+Every building has a maximum payout cap. Once you've earned that amount (through claims and compounds), the building completes its lifecycle. Then you:
+
+1. **Demolish** the building (free -- one click)
+2. **Build a new one** on the same plot, or
+3. **Sell the plot** on the marketplace to another player
+
+This is the full cycle: build, grow, harvest, repeat. Each cycle, you can reinvest profits into bigger buildings, more plots, or cash out.
+
+## Understanding productivity (your building's engine)
+
+Productivity is like your building's engine efficiency. It directly multiplies your earnings:
+
+- **100% = full speed** (this is where you start)
+- **200%+ = overcharged** (yes, you can go above 100% through compounding, up to 500%)
 - **50% = half earnings**
-- **0% = no earnings**
+- **0% = building is idle, earning nothing**
 
-Productivity recovers passively at +10% per day. Compounding boosts it by +15%. Claiming drains it by -15% (scaled with current productivity).
+Productivity recovers naturally at +10% per day. Compounding gives it a +15% boost. Claiming drains it by 15%.
 
-**Tip:** Frequent claims without compounding will gradually lower your productivity. Keep compounding to maintain peak performance.
+**The takeaway:** Players who compound regularly can push their productivity well above 100%, earning significantly more than the base rate. Active players earn more -- the game rewards engagement, not just capital.
 
-## 12-Hour Cycle
+## The 12-hour rhythm
 
-- Earnings accumulate for exactly 12 hours, then stop
-- You must compound or claim to start a new 12h cycle
-- If you don't log in for 3 days, you only earn for the first 12 hours -- the rest is idle time
-- This encourages regular interaction, but there's no penalty for waiting
-- Buy Auto-Action to remove this limit entirely
+- Your building earns for 12 hours, then pauses
+- Log in, compound or claim, and the 12-hour clock restarts
+- Miss a day? No penalty -- you just earned for 12 hours instead of 24. Your building waits for you
+- Want fully passive income? The Auto-Action boost removes the 12h limit entirely
 
+This design means everyone plays on a level field. No bots, no advantage from checking every minute. Just show up twice a day (or buy Auto-Action and relax).

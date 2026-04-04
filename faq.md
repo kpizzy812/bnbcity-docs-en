@@ -1,93 +1,177 @@
 # FAQ
 
-## General
+Real questions, honest answers.
+
+---
+
+## Getting started
 
 ### What is BNB City?
-An on-chain isometric city-builder game on BNB Smart Chain. You build businesses in a shared city, and each building generates daily yield through deflationary redistribution.
 
-### Is this a Ponzi?
-BNB City is a deposit redistribution protocol with deflationary mechanics. Early participants earn more -- this is transparent and on-chain. The epoch system gradually reduces extraction rates, keeping the pool healthier than traditional models. All fees and mechanics are visible in the verified smart contract.
+A shared isometric city-builder game on BNB Smart Chain where every building is a real income-generating asset. You buy land, build businesses, and earn daily yield. Everything runs on a single smart contract -- no middlemen, no accounts, no "trust us."
 
-### Can I lose money?
-Your deposit goes into the pool and starts generating yield. The maximum payout cap means the contract knows its total liability. However, if the pool runs out of BNB (zero new deposits for an extended period), earnings slow down to the floor rate (0.5%). The contract cannot guarantee returns -- it depends on continued participation.
+### How much do I need to start?
 
-### What chain is this on?
-BNB Smart Chain (BSC). Gas fees are extremely low (~$0.01 per transaction).
+The absolute minimum is **0.003 BNB** (~$1.80) -- that's a Mini plot (0.002) plus a T0 building (0.001). You can test the entire system for less than a cup of coffee.
+
+For a more meaningful experience, most players start at T3 or T4: **0.018 to 0.058 BNB** ($10--$35 total including land).
 
 ### What wallet do I need?
-Any BSC-compatible wallet works. We recommend:
-- **[Rabby](https://rabby.io)** -- clean desktop wallet
-- **[MetaMask](https://metamask.io)** -- most popular Web3 wallet
+
+Any wallet that supports BNB Smart Chain:
+- **[Rabby](https://rabby.io)** -- our recommendation for desktop
+- **[MetaMask](https://metamask.io)** -- the most widely used option
 - **[Trust Wallet](https://trustwallet.com)** -- best for mobile
+
+Gas fees on BSC are around $0.01 per transaction, so gas is never a concern.
+
+### What chain is this on?
+
+BNB Smart Chain (BSC). Fast, cheap, widely supported. If your wallet is set to Ethereum by default, just switch the network to BSC.
+
+---
 
 ## Gameplay
 
-### How much do I need to start?
-The cheapest entry is T0: 0.001 BNB deposit + 0.002 BNB for Mini land = **0.003 BNB total** (less than $2).
-
 ### How often should I log in?
-Every 12 hours is optimal for compounding. If you miss a cycle, earnings stop accumulating until your next action. There's no penalty -- you just lose potential earning time. You can also buy Auto-Action to remove the 12h cap entirely.
 
-### What happens when my building reaches its cap?
-The building completes its cycle and stops earning. You can demolish it (free) and either build a new business on the same plot or sell the plot to another player.
+**Twice a day is optimal** -- once every 12 hours. Your building earns for 12 hours, then pauses. Logging in to compound restarts the timer.
+
+If you can't do twice a day, once a day still works -- you just earn for 12 out of 24 hours. And if even that's too much, the **Auto-Action boost** removes the 12h limit entirely for 7 or 30 days.
+
+There's never a penalty for being away. You just miss potential earning time.
 
 ### Can I have multiple buildings?
-Yes. Each building is independent -- its own productivity, cap, and 12h timer. There's no limit on how many buildings you can own.
+
+Yes, and there's no limit. Each building runs independently -- its own productivity, cap, timer, and earnings. Many experienced players run 3--5+ buildings across different tiers and land plots.
+
+### What happens when my building reaches its cap?
+
+The building completes its lifecycle and stops earning. You demolish it (free, one click) and either build a new business on the same plot or sell the plot. This is the natural cycle -- build, grow, harvest, repeat.
 
 ### What's better -- small tier or big tier?
-- **Small tiers (T0--T3)** -- higher rate modifier, higher cap modifier, higher ROI percentage. Good for maximizing returns on small amounts.
-- **Big tiers (T6--T7)** -- lower rate and cap modifiers but massive absolute profits. Good for larger investments.
+
+It depends on your goals:
+
+- **Small tiers (T0--T3):** Higher percentage returns (5.25--6% daily). Best for maximizing ROI on smaller amounts. Great for learning the system.
+- **Big tiers (T6--T7):** Lower rates (2.75--3.5%) but massive absolute profits. A T6 building earns ~$18.90/day at base rate -- that's real income.
+- **Mid tiers (T4--T5):** The sweet spot for most players. Balanced rates and meaningful daily earnings.
 
 ### Can I upgrade my land?
-Yes. You can upgrade a Mini 1x1 plot to Standard 1x1 for 0.006 BNB (the price difference). This lets you place T3--T4 buildings on a plot that originally only supported T0--T2.
 
-## Economy
+Yes. A Mini plot can be upgraded to Standard for **0.006 BNB** ($3.60) -- just the price difference. This lets you place T3--T4 buildings on a plot that originally only supported T0--T2. You keep your exact location.
 
-### What's the current daily rate?
-The rate adjusts dynamically based on pool health. Check the "City Prosperity" indicator in-game. It ranges from 0.5% (floor) to 10% (ceiling). Each tier also has its own rate modifier (x0.55 to x1.20).
+---
 
-### What are epochs?
-Epochs are like Bitcoin halvings -- as more BNB is deposited into the city, rewards gradually decrease. There are 7 epochs (E0--E6). See [Epochs](epochs.md) for details.
+## Money questions
 
-### Where do my earnings come from?
-From the contract's BNB pool. The pool is funded by new deposits, claim taxes (3--6% pool portion), and sellback commissions. It's a redistribution model -- deposits flow in, earnings flow out, with deflationary mechanics keeping the pool sustainable.
+### How much can I actually earn?
+
+Here's a realistic scenario for a T4 building in Epoch 0:
+
+- Total investment: 0.058 BNB ($34.80) including land
+- Daily earnings (5% rate, 100% productivity): ~$1.35/day
+- With daily compounding over 30 days: principal grows significantly, daily earnings accelerate
+- Gross cap with +50% cap bonus from active compounding: ~$127
+- Net after 13% claim tax: ~$111
+- **Net return: ~3.2x your investment** with active play
+
+Returns vary based on the adaptive rate and your compounding consistency, but the math favors active players.
+
+### Where do the earnings come from?
+
+From the contract's BNB pool. The pool is funded by new deposits (90% of each goes to the pool), the pool portion of claim taxes (3--6% of every claim), sellback commissions, and referral withdraw taxes.
+
+It's a redistribution model. BNB flows in from deposits; earnings flow out from claims. The adaptive rate is the balancing mechanism -- if the pool gets thin, the rate drops. If the pool is healthy, the rate rises. The system seeks equilibrium.
+
+### Is this a Ponzi?
+
+Let's be direct: BNB City is a deposit redistribution protocol with deflationary mechanics. Early players earn more than later players -- this is transparent, intentional, and hardcoded.
+
+What makes it different from a typical Ponzi:
+- **Self-regulating rate** -- the adaptive rate drops when outflows exceed inflows, preventing the pool from draining
+- **Known max liability** -- every building's cap is set at creation, so the contract always knows its worst-case obligation
+- **Deflationary epochs** -- extraction rates decrease over time, keeping the pool healthier as it grows
+- **Full transparency** -- every mechanic, fee, and parameter is in a verified smart contract anyone can read
+
+Can you lose money? If the pool becomes severely depleted (near-zero new deposits for an extended period), the rate drops to the 0.5% floor. You'd still earn, but slowly. The contract cannot guarantee returns -- it depends on continued participation, just like any economic system.
 
 ### What is the deposit fee?
-10% of every deposit goes to the dev wallet. The remaining 90% becomes your building's working principal.
+
+10% of every deposit goes to the dev wallet. Your remaining 90% becomes your building's working capital. This fee is hardcoded and cannot be changed.
 
 ### What is the claim tax?
-13--16% total, depending on the epoch your building was created in. This is split: 10% fixed to the dev wallet + 3--6% back to the pool.
 
-### What's the cap bonus?
-Each compound adds +1% to your building's cap, up to +50%. After 50 compounds, your effective cap is 50% higher than the base cap.
+13--16% total, depending on the epoch your building was created in:
+- 10% always goes to the dev wallet
+- 3--6% goes back to the pool (higher in later epochs)
 
-## Boosts & Sinks
+The pool portion is what keeps the ecosystem sustainable -- every claim partially refills the pool for everyone.
 
-### What are sinks/boosts?
-Optional paid upgrades for your buildings. They provide convenience and efficiency but are never required. Examples: Auto-Action (removes 12h cap), Compound Boost (doubles pending for 7 days), Claim Shield (3 claims without productivity drain).
+### What's this "cap bonus" I keep hearing about?
 
-### Can I sell my building early?
-Yes, via Sellback. You sell the building back to the pool, but a commission (15--100%) is deducted based on how much you've already claimed. There's also a 7-day cooldown after your last action.
+Every time you compound, your building's payout cap grows by +1%, up to a maximum of +50%. After 50 compounds, your building can pay out 50% more than its base cap.
+
+This is the game's biggest reward for active players. Someone who logs in and compounds daily will earn significantly more total profit than someone who compounds once a week.
+
+---
+
+## Boosts & marketplace
+
+### Are boosts worth it?
+
+Depends on the boost, but generally yes -- each one has a clear ROI:
+
+- **Auto-Action** -- pays for itself in ~1 day of extra earnings if you'd otherwise miss the 12h window
+- **Compound Boost** -- doubles earnings for 7 days; the accelerated principal growth often returns 2--3x the cost
+- **Claim Shield** -- cheap protection for your productivity during claim phases
+- **Epoch Lock** -- permanent rate freeze; one of the highest-value plays in early epochs
+
+See [Boosts & Upgrades](boosts.md) for detailed ROI breakdowns.
+
+### Can I sell my building before it finishes?
+
+Two options:
+1. **Marketplace** -- list your plot (with the building) on the P2P market. Another player buys it and inherits your running business.
+2. **Sellback** -- sell the building back to the pool. Commission ranges from 15% (if you've barely claimed) to 100% (if you've claimed everything). Requires a 7-day cooldown.
+
+---
 
 ## Referrals
 
-### How do I get my referral link?
-Open the Referrals section in the game UI. Your unique link is there.
+### How do referrals work?
 
-### When do I get paid?
-Referral earnings are credited instantly to your in-game referral balance when your referrals deposit, compound, or buy boosts.
+Share your link. When someone builds through it, you earn:
+- **2%** of their deposits (Level 1)
+- **1%** of their invites' deposits (Level 2)
+- **0.5%** of third-degree deposits (Level 3)
+- **10%** of your L1 referrals' compounds
+- **50%** of your L1 referrals' boost purchases
 
-### How do I use my referral balance?
-Best option: build a new business (0% fees, ~11% higher cap since no deposit fee). You can also compound it into an existing building or withdraw (20% tax).
+All credited instantly to your in-game referral balance.
 
-### Do I earn from my referrals' boost purchases?
-Yes. L1 referrers get 50% of any sink/boost purchase made by their direct referrals.
+### How should I use my referral balance?
 
-## Technical
+**Build a new business with it.** You get 0% deposit fee (vs. 10% normally) and roughly 11% higher cap. It's the most efficient use by far.
+
+Withdrawing costs a 20% tax. Reinvesting costs nothing and gives you better returns. The math is clear.
+
+---
+
+## Trust & security
 
 ### Is the contract upgradeable?
-No. The contract is immutable -- no proxies, no admin upgrades. The code is final.
 
-### Where can I see the contract?
-The verified source code is available on BscScan. Link available in the game footer.
+No. It's immutable. No proxy, no admin upgrade path. The deployed code is final and permanent.
 
+### Can the team change the fees or rates?
+
+No. Every parameter is hardcoded. The only admin function is changing the dev wallet address. That's it.
+
+### Where can I verify the contract?
+
+The source code is verified on BscScan. Link available in the game footer. Anyone can read the code and confirm everything documented here.
+
+### What if the team disappears?
+
+The contract keeps running. It has no pause function, no kill switch. Even if the website goes offline, the contract remains on BSC and can be interacted with directly through any blockchain explorer. Your buildings keep earning.

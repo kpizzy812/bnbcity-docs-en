@@ -1,115 +1,136 @@
-# Core Mechanics
+# Economy
 
-## How Yield Works
+BNB City's economy is designed to be self-regulating, transparent, and sustainable. This page explains the core mechanics -- not as formulas in a textbook, but as a system you can understand, predict, and profit from.
 
-Every building generates daily yield based on a per-tier formula:
+## How your buildings earn money
 
-```
-Daily earnings = Principal x effectiveRate x (Productivity / 100)
-```
+Every building generates daily yield. The amount depends on three things:
 
-Where:
-- **Principal** -- your building's current power (initial deposit after fee, grows with compounds)
-- **effectiveRate** -- calculated per-tier: `adaptiveRate x TIER_RATE_MOD[tier] / 100`
-- **Productivity** -- your building's productivity level (0% to 500%)
+1. **Your principal** -- how much working capital your building has (grows every time you compound)
+2. **The effective rate** -- the city's adaptive rate, adjusted by your building's tier modifier
+3. **Your productivity** -- how efficiently your building is running (100% is normal, can go up to 500%)
 
-This means different tiers earn at different speeds. A T0 building earns 20% faster than T4, while a T7 building earns 45% slower.
+In simple terms: bigger principal x higher rate x higher productivity = more daily income.
 
-## Adaptive Rate (City Prosperity)
+**Real example (T4, Epoch 0, healthy pool):**
+- Principal after 10% fee: 0.045 BNB ($27)
+- Effective rate: 5.0%/day (base rate 5% x T4 modifier x1.00)
+- Productivity: 100%
+- Daily earnings: $1.35
 
-The base daily rate self-adjusts based on the health of the city's economy:
+Compound every day for a week, and that daily income keeps growing as your principal increases. This is the snowball effect that makes compounding so powerful.
 
-```
-adaptiveRate = baseRate x (contractBalance / activeDeposits)
-```
+## The adaptive rate: a self-healing economy
 
-- When the pool is healthy (more BNB than obligations) -- rate goes up
-- When the pool is stressed (many withdrawals) -- rate goes down
-- **Floor: 0.5%** -- guaranteed minimum, you always earn something
-- **Ceiling: 10%** -- maximum cap, protects against excessive payouts
+This is the most important innovation in BNB City's design. Instead of a fixed yield rate (which always breaks eventually), the rate **adjusts itself** based on the health of the city's treasury:
 
-The base rate depends on the current epoch (5.0% in Epoch 0, down to 2.0% in Epoch 6).
+- **When the pool is flush** (lots of deposits, healthy balance) -- the rate rises, rewarding players
+- **When the pool is stressed** (many withdrawals, balance shrinking) -- the rate drops, slowing outflows
+- **Floor: 0.5%/day** -- you always earn something, no matter what
+- **Ceiling: 10%/day** -- prevents unsustainable payouts during euphoric periods
 
-In the game UI, this appears as **"City Prosperity"** -- a visual indicator of the city's economic health.
+The formula is elegant: the rate tracks the ratio of the contract's BNB balance to total active deposits. If there's more BNB in the contract than total obligations, the rate goes up. If obligations exceed the balance, the rate comes down.
 
-## Per-Tier Rate Modifiers
+**Why this matters to you:** Unlike fixed-rate protocols that boom and bust, BNB City's economy has a built-in thermostat. It self-corrects. When things get too hot, it cools down. When activity slows, it rewards those who stay. This is why the system can sustain itself through market cycles.
 
-Each tier has its own rate modifier applied on top of the adaptive rate:
+In the game, you see this as **"City Prosperity"** -- a visual meter showing the current economic health.
 
-| Tier | Rate Mod | Effect |
-|------|----------|--------|
-| T0 | x1.20 | Earns 20% faster |
+## Per-tier rate modifiers: fair by design
+
+Not all buildings earn at the same rate. Each tier has its own modifier:
+
+| Tier | Rate modifier | What it means |
+|------|--------------|---------------|
+| T0 | x1.20 | Earns 20% faster than baseline |
 | T1 | x1.15 | Earns 15% faster |
 | T2 | x1.10 | Earns 10% faster |
 | T3 | x1.05 | Earns 5% faster |
-| T4 | x1.00 | Base rate (no modifier) |
+| T4 | x1.00 | The baseline |
 | T5 | x0.85 | Earns 15% slower |
 | T6 | x0.70 | Earns 30% slower |
 | T7 | x0.55 | Earns 45% slower |
 
-This is a deliberate design choice: smaller tiers compensate for their lower absolute deposits with a higher earning rate, while larger tiers trade rate for sheer volume.
+**The design principle:** Small players deserve proportionally better returns. If you can only invest $2, you should earn a higher percentage than someone investing $3,000. The tier modifiers make this happen. It's a progressive system that keeps the game accessible and fair.
 
-## Max Payout Cap
+At the same time, large players still earn massive absolute profits. A T7 building at 2.75%/day on a $2,700 principal is $74.25/day -- far more in dollar terms than a T0 earning 6% on $0.54.
 
-Every building has a maximum total payout, determined at construction time:
+## The payout cap: sustainable by math
 
-```
-maxPayout = deposit x epochCap x tierCapMod
-```
+Every building has a maximum total payout. This is critical to sustainability -- the contract always knows its maximum liability.
 
-**Example (T3, Epoch 0):**
-- Deposit: 0.01 BNB
-- Epoch cap: 3.0x
-- Tier cap modifier: x1.15
-- Max payout: 0.01 x 3.0 x 1.15 = **0.0345 BNB**
+The cap is determined at construction:
+- **Epoch cap** (3.0x in E0, decreasing to 2.4x in E6) x **Tier cap modifier** (x0.80 to x1.25) x **Your real deposit** (after fee)
 
-## Cap Bonus
+**Example -- T3 building, Epoch 0:**
+- Real deposit: 0.009 BNB (0.01 minus 10% fee)
+- Cap: 0.009 x 3.0 x 1.15 = 0.031 BNB ($18.63)
+- That's a 3.45x gross return on your $6 deposit
 
-Every compound adds **+1%** to your building's cap bonus, up to a maximum of **+50%**. This bonus extends the maximum payout:
+**But it gets better.** Every compound adds +1% to your cap bonus, up to +50%. After 50 compounds:
+- Effective cap: 0.031 x 1.50 = 0.04658 BNB ($27.95)
+- That's a **5.18x gross return** for an active player
 
-```
-effectiveCap = maxPayout x (1 + capBonus / 100)
-```
+This cap bonus is the game's biggest reward for engagement. Passive players get the base return. Active compounders can push their returns 50% higher.
 
-After 30 compounds, your cap is 30% higher. After 50 compounds, it's 50% higher. This rewards consistent engagement.
+## Compounding: the engine of wealth
 
-## Why Compound?
+Compounding is the single most important action in BNB City. When you compound:
 
-Compounding is powerful for three reasons:
+| What happens | Why it matters |
+|-------------|---------------|
+| Pending earnings are added to your principal | Tomorrow you earn on a bigger base |
+| Productivity gets +15% boost | Can overcharge up to 500%, multiplying your earnings |
+| Cap bonus increases by +1% (max +50%) | Your building can pay out more total |
+| 12h timer resets | New earning cycle begins |
+| Your L1 referrer gets 10% of the compound | Costs you nothing, rewards your network |
 
-1. **Grows your principal** -- bigger daily earnings
-2. **Grows your cap** -- +1% cap bonus per compound (max +50%)
-3. **Boosts productivity** -- +15% per compound (can overcharge to 500%)
+**The compound vs. claim tradeoff:**
 
-| Strategy | Effect |
-|----------|--------|
-| Compound daily | Fastest growth, highest eventual payout |
-| Claim daily | Immediate cash but shrinking productivity and no cap bonus |
-| Mix (compound then claim) | Balanced approach, build up then extract |
+| Strategy | Daily income growth | Productivity trend | Cap bonus | Best for |
+|----------|--------------------|--------------------|-----------|----------|
+| Compound every day | Accelerating | Rising (can reach 500%) | +1%/day | Maximum total profit |
+| Claim every day | Flat or declining | Falling (-15%/claim) | None | Immediate cash (not recommended) |
+| Compound 7--10 days, then claim | Strong growth, periodic harvest | Stable cycle | Building steadily | Most players |
 
-Compound = faster cycles = more profit over time.
+## The 12-hour cycle: level playing field
 
-## The 12-Hour Cycle
+Each building earns for 12 hours, then stops. You must compound or claim to restart the timer.
 
-Each building has its own 12-hour timer:
-1. Earnings accumulate for 12 hours
-2. After 12h -- earnings stop (but don't disappear)
-3. Compound or claim to restart the timer
-4. Timer is per-building, not global
+This design choice has important consequences:
+- **No botting advantage** -- a bot and a human both get one action per 12 hours
+- **No urgency to check every hour** -- just log in twice a day
+- **Idle time is wasted time** -- but there's no penalty, just missed opportunity
+- **Auto-Action boost** removes the limit entirely for players who want passive income
 
-This means there's no advantage to botting -- everyone gets one action per 12 hours per building. If you want continuous earning, activate the Auto-Action boost (see [Boosts & Upgrades](boosts.md)).
+## Where the money comes from (and goes)
 
-## Deposit Fee
+BNB City is a redistribution protocol. Here's the flow:
 
-When you build, **10% of your deposit goes to the dev wallet**. The remaining 90% becomes your building's real deposit, which determines your cap and earning power.
+**Money flowing IN:**
+- New deposits (90% of each deposit enters the pool)
+- Pool portion of claim taxes (3--6% of every claim goes back to the pool)
+- Sellback commissions
+- Referral withdraw taxes (20%)
 
-**Example:** You deposit 1 BNB -> 0.1 BNB goes to dev -> 0.9 BNB is your real deposit.
+**Money flowing OUT:**
+- Claim payouts (earnings withdrawn by players)
+- Sellback refunds
+- Referral withdrawals
 
-## Claim Tax
+**Money to the dev wallet:**
+- 10% of deposits
+- 10% of claims (fixed)
+- 10% of sellback commissions
+- Boost/sink purchases (minus 50% referral bonus)
 
-When you withdraw earnings, a combined tax is deducted:
-- **10% fixed** goes to the dev wallet
-- **3--6%** goes back to the pool (varies by epoch)
-- Total: **13--16%** depending on which epoch the building was created in
+The adaptive rate is the balancing mechanism. When more money flows in than out, the rate rises -- rewarding players. When more flows out, the rate falls -- protecting the pool. The system seeks equilibrium naturally.
 
-The pool portion helps sustain payouts for everyone. See [Fees & Taxes](fees.md) for the full breakdown.
+## The bottom line
+
+BNB City's economy works because it combines three things that most DeFi projects get wrong:
+
+1. **Self-regulating yields** -- no fixed rate that inevitably breaks
+2. **Known maximum liability** -- every building's cap is set at creation, so the contract always knows its worst-case obligations
+3. **Deflationary pressure** -- epochs progressively reduce extraction rates, keeping the pool healthy as the city grows
+
+The result is a system where early players earn more (because early epochs have better rates), active players earn more (because compounding increases principal, productivity, and cap), and the pool stays healthy through mathematical self-correction.

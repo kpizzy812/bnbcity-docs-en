@@ -1,95 +1,100 @@
 # Boosts & Upgrades
 
-## Overview
+Boosts are optional power-ups you can buy for your buildings. Think of them as smart investments -- each one has a clear purpose and a measurable ROI. None of them are required to play, but the right boost at the right time can dramatically accelerate your returns.
 
-Boosts are optional paid upgrades you can purchase for your buildings. They provide convenience and efficiency advantages but are never required to play. All boost costs are proportional to the building's tier deposit.
+**Bonus:** Your L1 referrer receives **50% of every boost you purchase**. So when you invest in boosts, you're also rewarding the person who brought you into the game.
 
-Your L1 referrer receives **50% of any boost purchase** you make.
+## All available boosts
 
-## All Available Boosts
-
-| Boost | Cost | Effect | Duration |
-|-------|------|--------|----------|
-| Auto-Action 7d | 5% of tier deposit | Removes 12h earning cap | 7 days |
-| Auto-Action 30d | 15% of tier deposit | Removes 12h earning cap | 30 days |
-| Productivity Recharge | 5% of tier deposit | Reset productivity to 100% | Instant |
-| Compound Boost | 20% of tier deposit | Doubles pending earnings | 7 days |
+| Boost | Cost | What it does | Duration |
+|-------|------|-------------|----------|
+| Auto-Action 7d | 5% of tier deposit | Removes the 12h earning cap | 7 days |
+| Auto-Action 30d | 15% of tier deposit | Removes the 12h earning cap | 30 days |
+| Productivity Recharge | 5% of tier deposit | Resets productivity to 100% | Instant |
+| Compound Boost | 20% of tier deposit | Doubles all pending earnings | 7 days |
 | Claim Shield | 5% of tier deposit | Claims without productivity drain | 3 charges |
-| Epoch Lock | 20% of tier deposit | Lock current rate permanently | Permanent |
-| Landmark | 0.005 BNB flat | Gold border on city map | 30 days |
-| Batch Compound | 0.001 BNB per building | Compound multiple buildings at once | Per use |
+| Epoch Lock | 20% of tier deposit | Freezes your current rate forever | Permanent |
+| Landmark | 0.005 BNB flat | Gold border on the city map | 30 days |
+| Batch Compound | 0.001 BNB per building | Compound all buildings at once | Per use |
 
-## Auto-Action
+## Auto-Action: Set it and forget it
 
-**Cost:** 5% (7 days) or 15% (30 days) of tier deposit
+**Cost:** 5% of tier deposit (7 days) or 15% (30 days)
 
-Normally, earnings accumulate for 12 hours then stop -- you must compound or claim to restart the timer. Auto-Action removes this limit entirely. Your building earns continuously for the duration.
+Normally, your building earns for 12 hours and then pauses until you compound or claim. Auto-Action removes that limit entirely. Your building earns continuously, around the clock, for the full duration.
 
-**When to use:** If you can't log in every 12 hours, or if you want fully passive income.
+**Who it's for:** Anyone who can't (or doesn't want to) log in every 12 hours. Travelers, busy professionals, or just people who prefer passive income.
 
-**Example (T4, 0.05 BNB):**
-- 7-day Auto-Action: 0.0025 BNB
-- 30-day Auto-Action: 0.0075 BNB
+**The ROI math (T4 example -- 0.05 BNB deposit):**
+- 7-day Auto-Action costs 0.0025 BNB ($1.50)
+- Without it: you earn for ~12h/day if you log in once = half your potential
+- With it: you earn for 24h/day = double the earnings of a once-a-day player
+- Extra earnings over 7 days at 5% rate: ~0.0158 BNB ($9.45)
+- **ROI: ~6.3x the cost of the boost**
 
-## Productivity Recharge
+The 30-day version is even better value -- you pay 3x more but get 4.3x the duration.
 
-**Cost:** 5% of tier deposit
-
-Instantly resets your building's productivity to 100%. Can only be purchased when productivity is **below 50%**.
-
-**When to use:** After heavy claiming has drained your productivity. Instead of waiting for passive recovery (+10%/day), pay to reset immediately.
-
-**Example (T4, 0.05 BNB):** 0.0025 BNB to reset from <50% to 100%.
-
-## Compound Boost
+## Compound Boost: Double your growth
 
 **Cost:** 20% of tier deposit
 
-Doubles all pending earnings for 7 days. This effectively doubles your earning rate for the duration.
+This is the most powerful earnings accelerator in the game. For 7 days, all your pending earnings are **doubled**. That means your compounds are twice as large, your principal grows twice as fast, and your snowball effect is supercharged.
 
-**When to use:** During early compound phases to accelerate principal growth, or when the adaptive rate is high and you want to maximize.
+**Best timing:** Activate this during your early compounding phase (days 1--7 of a building's life). The doubled compounds stack on top of each other, creating an exponential effect on your principal.
 
-**Example (T4, 0.05 BNB):** 0.01 BNB for 7 days of doubled earnings.
+**The ROI math (T4 example):**
+- Cost: 0.01 BNB ($6)
+- Extra earnings over 7 days (doubling ~0.00225/day): ~0.01575 BNB ($9.45) in additional compound value
+- But since these compounds increase your principal, the benefit extends far beyond the 7-day window
+- **Estimated total extra profit over the building's lifecycle: 2--3x the boost cost**
 
-## Claim Shield
+## Claim Shield: Take profits without the penalty
+
+**Cost:** 5% of tier deposit (gives 3 charges)
+
+Every time you claim, your productivity drops by 15%. With Claim Shield, three of your claims happen penalty-free -- no productivity drain at all. You keep your engine running at full speed while taking money off the table.
+
+**Who it's for:** Players in the "claim phase" after building up through compounds. Instead of watching productivity erode with each claim, you get 3 clean withdrawals.
+
+**T4 example:** 0.0025 BNB ($1.50) for 3 protected claims. If each claim yields ~0.01 BNB, you're paying $1.50 to protect $18 worth of earning capacity. Easy decision.
+
+## Productivity Recharge: Emergency refill
 
 **Cost:** 5% of tier deposit
 
-Gives you 3 claim charges that don't drain your productivity. Normally, each claim reduces productivity by -15%. With Claim Shield active, you can claim 3 times without any productivity loss.
+Instantly resets your building's productivity to 100%. Only available when productivity drops below 50%.
 
-**When to use:** When you want to extract earnings without compromising your building's efficiency.
+**Why it exists:** If you've been claiming heavily and your productivity is tanked, the natural recovery is +10% per day. Getting from 30% back to 100% takes 7 days. This boost does it instantly.
 
-**Example (T4, 0.05 BNB):** 0.0025 BNB for 3 protected claims.
+**When to use:** When your building's productivity is so low that the lost earnings from waiting for natural recovery exceed the cost of the recharge. For most players, this is the right call below 40% productivity.
 
-## Epoch Lock
+## Epoch Lock: Freeze the good times
 
 **Cost:** 20% of tier deposit
 
-Permanently locks your building's current adaptive rate. After activation, epoch changes no longer affect this building's rate -- it keeps the rate from the moment of purchase, forever.
+This is a bet on the future. It permanently locks your building's current adaptive rate, protecting it from epoch-driven rate decreases. No matter what happens to the base rate as the city grows, your building keeps earning at today's rate -- forever.
 
-**Restriction:** Only available for buildings created in **Epochs 0--3**. Not available for Epoch 4+ buildings.
+**Only available for buildings created in Epochs 0--3.** This is by design -- early players who lock in high rates get rewarded for their early conviction.
 
-**When to use:** If the current adaptive rate is high and you want to guarantee it for the life of the building. Best purchased early in the game when rates are at their peak.
+**The value proposition:** If you're building in Epoch 0 (5% base rate) and the city eventually reaches Epoch 4 (3% base rate), your locked building is earning 67% more than new buildings. That advantage lasts for the building's entire lifecycle.
 
-**Example (T4, 0.05 BNB):** 0.01 BNB to lock the current rate permanently.
+**T4 example:** 0.01 BNB ($6) to permanently guarantee a 5% base rate on a building that could earn over $100 in its lifetime. If rates drop by even one epoch, the lock has already paid for itself.
 
-## Landmark
+## Landmark: Show off
 
-**Cost:** 0.005 BNB flat (same for all tiers)
+**Cost:** 0.005 BNB flat ($3) for all tiers
 
-Adds a gold border around your building on the city map for 30 days. Purely cosmetic -- makes your building stand out visually.
+Adds a gold border around your building on the city map for 30 days. Purely cosmetic, purely for bragging rights. Your building stands out visually to everyone browsing the city.
 
-**When to use:** If you want to show off your building's location or mark it as special.
+## Batch Compound: Save time at scale
 
-## Batch Compound
+**Cost:** 0.001 BNB per building ($0.60)
 
-**Cost:** 0.001 BNB per building
+If you own multiple buildings, compounding each one individually is tedious. Batch Compound lets you compound all of them in a single transaction. Time saved, gas saved, sanity saved.
 
-Allows you to compound multiple buildings in a single transaction instead of compounding each one individually. Saves time and gas when managing many buildings.
+**When it makes sense:** If you own 3+ buildings, the time savings alone justify the cost. At scale (10+ buildings), this becomes essential.
 
-**When to use:** If you own 3+ buildings and want to compound them all at once.
-
-## Cost Examples by Tier
+## Cost by tier (quick reference)
 
 | Boost | T0 (0.001) | T3 (0.01) | T4 (0.05) | T6 (1.0) | T7 (5.0) |
 |-------|-----------|-----------|-----------|----------|----------|
@@ -102,8 +107,8 @@ Allows you to compound multiple buildings in a single transaction instead of com
 | Landmark | 0.005 | 0.005 | 0.005 | 0.005 | 0.005 |
 | Batch Compound | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
 
-## Referral Bonus on Boosts
+## The referral bonus on boosts
 
-Your L1 referrer earns **50% of every boost purchase** you make. This is credited to their referral balance instantly.
+Your L1 referrer earns **50% of every boost purchase** you make, credited instantly to their referral balance.
 
-**Example:** You buy a Compound Boost for T4 (0.01 BNB). Your referrer gets 0.005 BNB in their referral balance.
+**Example:** You buy a Compound Boost for a T4 building (0.01 BNB). Your referrer gets 0.005 BNB ($3) credited immediately. If they've built a solid referral network with active players buying boosts, this income stream alone can be significant.
