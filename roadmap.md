@@ -11,11 +11,9 @@ The core game goes live with a full-featured economy. This is where early movers
 - Full gameplay loop: buy land, build, compound, claim
 - 8 building tiers, 4 land types, all boosts active
 - 3-level referral system
-- **P2P land marketplace** -- buy and sell plots from other players
-- **Building marketplace** -- trade active businesses with running income
 - English + Russian localization
 
-**Why it matters:** Phase 1 includes a live marketplace from day one. You can already buy, sell, and trade land and buildings with other players. Combined with Epoch 0 rates, the best caps, and the most central plots -- everything built now has a permanent structural advantage.
+**Why it matters:** Phase 1 includes building sale from day one -- you can always exit a position early. Combined with Epoch 0 rates, the best caps, and the most central plots -- everything built now has a permanent structural advantage.
 
 ## Phase 2: Growth -- Competitive Layer
 

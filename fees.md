@@ -9,7 +9,6 @@ Every fee in BNB City is hardcoded into the smart contract. Nobody can change th
 | Building (deposit) | 10% | Dev wallet | Funds development and operations |
 | Claiming earnings | 13--16% | 10% dev + 3--6% pool | Sustains the ecosystem |
 | Withdrawing referral balance | 20% | Back to pool | Incentivizes reinvestment |
-| P2P marketplace sale | 10% | Protocol | Marketplace infrastructure |
 | Primary land sale | 100% | Protocol | City expansion funding |
 | Sellback | 15--100% | Pool (dev gets 10% of commission) | Exit mechanism |
 
@@ -69,9 +68,7 @@ The dev wallet gets 10% of whatever the commission is. The rest returns to the p
 
 **The logic:** If you've barely claimed anything, the pool can afford to refund most of your deposit. If you've already extracted most of your cap, there's little to refund. This prevents gaming the sellback system.
 
-## Marketplace fee (10%)
 
-P2P land and building sales carry a 10% fee to the protocol. The seller receives 90%.
 
 Primary land sales (buying fresh plots from the mayor) go 100% to the protocol -- this funds the city's expansion.
 

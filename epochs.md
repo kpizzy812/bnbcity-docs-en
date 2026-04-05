@@ -96,7 +96,7 @@ You can watch this number in-game. When it approaches the next threshold, you'll
 - Dev claim tax (always 10%)
 - Referral percentages (always 2%/1%/0.5%)
 - All boost costs
-- Marketplace fee (always 10%)
+
 
 **Important:** The compression is gradual, not dramatic. Cap goes from 3.0x to 2.4x (not to 1.0x). Pool tax goes from 3% to 6% (not to 30%). Even in Epoch 6, building is still profitable -- just less so than in the early epochs.
 
@@ -110,7 +110,7 @@ See [Boosts & Upgrades](boosts.md) for details.
 
 ## Epoch 0 = OG status
 
-Buildings constructed in Epoch 0 are the game's originals. They have the highest caps, the lowest taxes, and they were there from the beginning. When these buildings (or the land they sit on) appear on the marketplace, they carry a premium -- like owning a first-edition anything.
+Buildings constructed in Epoch 0 are the game's originals. They have the highest caps, the lowest taxes, and they were there from the beginning. These buildings carry a premium -- like owning a first-edition anything.
 
 **The takeaway:** Every day you wait is a day closer to the next epoch. The game rewards early movers. The math doesn't lie.
 

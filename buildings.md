@@ -109,7 +109,7 @@ Your building evolves visually as you compound:
 
 ```
 Buy land -> Build (deposit) -> Compound daily -> Claim profits ->
--> Cap reached -> Demolish (free) -> Build again or sell the plot
+-> Cap reached -> Demolish (free) -> Build again
 ```
 
 Each cycle is an opportunity to reinvest at a higher tier, diversify across multiple plots, or take profits off the table. You're in control of your strategy at every step.

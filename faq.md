@@ -116,7 +116,7 @@ This is the game's biggest reward for active players. Someone who logs in and co
 
 ---
 
-## Boosts & marketplace
+## Boosts & selling
 
 ### Are boosts worth it?
 
@@ -131,8 +131,7 @@ See [Boosts & Upgrades](boosts.md) for detailed ROI breakdowns.
 
 ### Can I sell my building before it finishes?
 
-Two options:
-1. **Marketplace** -- list your plot (with the building) on the P2P market. Another player buys it and inherits your running business.
+You can sell it back to the pool:
 2. **Sellback** -- sell the building back to the pool. Commission ranges from 15% (if you've barely claimed) to 100% (if you've claimed everything). Requires a 7-day cooldown.
 
 ---

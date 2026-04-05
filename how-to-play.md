@@ -97,7 +97,7 @@ Every building has a maximum payout cap. Once you've earned that amount (through
 
 1. **Demolish** the building (free -- one click)
 2. **Build a new one** on the same plot, or
-3. **Sell the plot** on the marketplace to another player
+3. **Hold the plot** for your next building
 
 This is the full cycle: build, grow, harvest, repeat. Each cycle, you can reinvest profits into bigger buildings, more plots, or cash out.
 

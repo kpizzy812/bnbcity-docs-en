@@ -49,7 +49,6 @@ These values are burned into the contract and cannot be changed by anyone, ever:
 | Claim tax (pool portion) | 3--6% by epoch | No |
 | Referral levels | 2% / 1% / 0.5% | No |
 | Referral withdraw tax | 20% | No |
-| Marketplace fee | 10% | No |
 | Tier deposits | 0.001 -- 5 BNB | No |
 | Land prices | 0.002 -- 0.125 BNB | No |
 | Epoch thresholds | 5 -- 200 BNB | No |

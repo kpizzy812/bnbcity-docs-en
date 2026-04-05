@@ -8,7 +8,7 @@
 * [Buildings & Tiers](buildings.md)
 * [Land](land.md)
 * [Boosts & Upgrades](boosts.md)
-* [Marketplace & Sellback](marketplace.md)
+* [Sell Building](marketplace.md)
 
 ## Economy
 

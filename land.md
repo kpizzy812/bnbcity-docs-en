@@ -17,7 +17,6 @@ In BNB City, land isn't just a prerequisite for building -- it's an asset class 
 
 The city grows outward from the center in rings. The first plots sold are the closest to the center -- the most visible, the most prestigious. Once those plots are taken, they're gone forever from the primary market.
 
-If you want a central plot later, you'll have to buy it from another player on the P2P marketplace -- and they'll set the price.
 
 ### 2. Land appreciates as the city grows
 
@@ -41,7 +40,6 @@ Think of it like a real city growing outward: first the downtown core fills up, 
 
 ## Land strategies
 
-**The flipper:** Buy multiple cheap Mini plots in early rings. Hold them. As the city grows and those locations become surrounded by active businesses, sell them on the P2P marketplace at a markup.
 
 **The upgrader:** Start with Mini plots and small buildings. As you earn from those buildings, upgrade the land and build bigger. Reinvest without ever leaving your prime location.
 
@@ -54,7 +52,6 @@ Think of it like a real city growing outward: first the downtown core fills up, 
 When a building reaches its payout cap, the cycle is complete. You can:
 
 1. **Demolish the building** (free, one click) and build a new one on the same plot
-2. **Sell the plot** (with or without the building) on the P2P marketplace
 3. **Hold the empty plot** -- no cost, no rush
 
 Your land never expires. It's yours until you sell it.

@@ -21,8 +21,7 @@ Imagine a shared pixel city on the blockchain where every building is a real inc
 - **Building yield** -- your buildings generate daily income automatically
 - **Compounding** -- reinvest earnings to grow your principal and boost your cap
 - **Referrals** -- earn 2% / 1% / 0.5% on your network's deposits, plus 10% on their compounds and 50% on their boost purchases
-- **Land speculation** -- buy plots early at prime locations, sell later on the P2P marketplace
-- **Marketplace trading** -- buy and sell buildings with active income streams
+- **Land** -- reusable plots for building multiple businesses over time
 
 ## Quick start (5 minutes)
 
